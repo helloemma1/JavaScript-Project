@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Subscription Platform</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/7e122096ba.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="img__wrapper">
+        <section id="search">
+            <nav>
+                <div class="nav__container">
+                    <img src="Images/whitelogo.39850b27.png" alt="blinker" class="logo">
+                    <ul class="nav__links">
+                        <li><a href="#" class="nav__link">Home</a></li>
+                        <li><a href="#" class="nav__link">Find your movie</a></li>
+                        <li><a href="#" class="nav__link--primary">CONTACT</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <h1>Browse our movies</h1>
+            <div class="input__wrapper">
+                <input type="text" id="searchInput" placeholder="Search by Title"> <!-- JS target for user input -->
+                <div class="search__wrapper" id="searchBtn"> <!-- JS trigger for search click -->
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+        </section>
+    </div>
+
+<section id="results">
+        <div class="content__wrapper">
+            <div class="results__header">
+                <h2 class="results__title">Search results for "<span id="searchKeyword"></span>"</h2>
+                <select id="sortMenu">
+                    <option value="az">A to Z</option>
+                    <option value="za">Z to A</option>
+                    <option value="newest">Newest to oldest</option>
+                    <option value="oldest">Oldest to newest</option>
+                </select>
+            </div>
+            <div class="movie__grid" id="movieGrid"></div>
+        </div>
+    </section>
+    <footer> <!-- Footer container -->
+        <div class="footer__container">
+            <img src="Images/whitelogo.39850b27.png" alt="blinker" class="footer__logo">
+            <p class="footer__copyright">Copyright &copy; 2026 Movie Subscription Platform. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="movies.js"></script> <!-- JS file loaded at bottom for performance -->
+</body>
+</html>
